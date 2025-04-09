@@ -40,15 +40,12 @@
 }
 
 .portfolio-card__link::after{
-    content: '';
-    display: inline-block;
-    width: 15px; /* Ширина изображения */
-    height: 15px; /* Высота изображения */
-    margin-left: 8px; /* Отступ между изображением и текстом */
-    background-image: url('/images/icon/link.svg'); /* Укажите путь к изображению */
-    background-size: contain; /* Увеличить/уменьшить изображение, чтобы поместилось */
-    background-repeat: no-repeat;
-    vertical-align: middle; 
+    content: '⇦';
+    margin-left: 8px; 
+}
+
+.portfolio-card__link:hover{
+    color: var(--color-accent);
 }
 
 .porfolio-card__description{

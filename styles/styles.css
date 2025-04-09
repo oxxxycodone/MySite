@@ -1,21 +1,21 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Inter";
-  src: url("fonts/Inter-Italic-VariableFont_opsz,wght.woff2") format(".woff2");
+  src: url("/fonts/Inter-Italic-VariableFont_opsz,wght.woff2") format(".woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Inter";
-  src: url("fonts/Inter-VariableFont_opsz,wght.woff2") format(".woff2");
+  src: url("/fonts/Inter-VariableFont_opsz,wght.woff2") format(".woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Jersey15";
-  src: url("fonts/Jersey15-Regular.woff2") format(".woff2");
+  src: url("/fonts/Jersey15-Regular.woff2") format(".woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -669,15 +669,12 @@ h1, h2, h3, h4 {
 }
 
 .portfolio-card__link::after {
-  content: "";
-  display: inline-block;
-  width: 15px; /* Ширина изображения */
-  height: 15px; /* Высота изображения */
-  margin-left: 8px; /* Отступ между изображением и текстом */
-  background-image: url("images/icon/link.svg"); /* Укажите путь к изображению */
-  background-size: contain; /* Увеличить/уменьшить изображение, чтобы поместилось */
-  background-repeat: no-repeat;
-  vertical-align: middle;
+  content: "⇦";
+  margin-left: 8px;
+}
+
+.portfolio-card__link:hover {
+  color: var(--color-accent);
 }
 
 .porfolio-card__description {
